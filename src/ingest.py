@@ -22,7 +22,7 @@ def build_vector_database():
         print("No documents found to process.")
         return
 
-    # 2. Split text into chunks (Interview talking point: Recursive splitting is better than character splitting)
+    # 2. Split text into chunks 
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
     chunks = text_splitter.split_documents(documents)
     print(f"Split into {len(chunks)} text chunks.")
