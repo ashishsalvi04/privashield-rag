@@ -39,7 +39,7 @@ else:
                 st.markdown("### 🤖 Analysis & Answer")
                 st.write(response["answer"])
                 
-                # Display Sources (This is what impresses interviewers!)
+                # Display Sources
                 st.markdown("---")
                 with st.expander("📚 View Retreived Source Context (Transparency)"):
                     for i, doc in enumerate(response["context"]):
